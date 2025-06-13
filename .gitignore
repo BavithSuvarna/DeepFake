@@ -1,0 +1,71 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env
+.env.*
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+*.out
+
+# Python specific
+*.pkl
+*.pt
+*.h5
+*.ckpt
+*.weights
+*.onnx
+
+# Video files
+*.mp4
+*.avi
+*.mov
+
+# Data folders to ignore
+frames/
+uploads/
+model/latest_checkpoint.pth
+model/deepfake_model.pth
+model/best_deepfake_model.pth
+
+# VS Code config
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+temp_frames/
+test_frame.jpg
+
+# Environment files
+*.env
+
+# Ignore node_modules and build folders inside deepfake-frontend
+/deepfake-frontend/node_modules/
+/deepfake-frontend/.pnp
+/deepfake-frontend/.pnp.js
+/deepfake-frontend/coverage/
+/deepfake-frontend/build/
+
+# Ignore environment files in frontend
+/deepfake-frontend/.env
+/deepfake-frontend/.env.local
+/deepfake-frontend/.env.development.local
+/deepfake-frontend/.env.test.local
+/deepfake-frontend/.env.production.local
+
+# Ignore log files in frontend
+/deepfake-frontend/npm-debug.log*
+/deepfake-frontend/yarn-debug.log*
+
+# Ignore OS junk files
+/deepfake-frontend/.DS_Store

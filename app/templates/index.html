@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deepfake Video Detector</title>
+</head>
+<body>
+    <h1>Upload a Video to Detect Deepfakes</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="video/*" required>
+        <input type="submit" value="Upload and Predict">
+    </form>
+    {% if result %}
+        <h2>Prediction Result:</h2>
+        <p>{{ result }}</p>
+    {% endif %}
+</body>
+</html>
