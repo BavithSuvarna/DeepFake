@@ -29,6 +29,7 @@ node_modules/
 *.mov
 
 # Data folders to ignore
+dataset/
 frames/
 uploads/
 model/latest_checkpoint.pth
