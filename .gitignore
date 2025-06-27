@@ -34,7 +34,7 @@ frames/
 uploads/
 model/latest_checkpoint.pth
 model/deepfake_model.pth
-model/best_deepfake_model.pth
+
 
 # VS Code config
 .vscode/
