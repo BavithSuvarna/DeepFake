@@ -8,7 +8,7 @@ import os
 import shutil
 
 # Load the deepfake detection model
-def load_model(model_path=r"C:\Users\bavit\OneDrive\Documents\Desktop\Major Project\DEEPFAKE_DETECTION\deepfake-detector\model\best_deepfake_model.pth"):
+def load_model(model_path=r"C:\Users\bavit\OneDrive\Desktop\Major Project\DEEPFAKE_DETECTION\deepfake-detector\model\best_deepfake_model.pth"):
     model = models.resnet18(weights=None)
     model.fc = nn.Linear(model.fc.in_features, 2)
     model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
